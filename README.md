@@ -3,6 +3,6 @@ Portafolio usando github pages. Para esta pagina se usó una plantilla de HTML l
 
 ## Cambios faltantes:
 
-- Crear un botón que muestre la hoja de vida en ingles.
+- Mejorar la traducción de la información en la hoja de vida en ingles.
 - Arreglar la visión del panel principal y el background home en dispositivos moviles.
 - Reducir el espaciado entre lineas de las descripciones en la sección de experiencia y educación. 
