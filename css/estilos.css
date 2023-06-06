@@ -36,6 +36,20 @@ Estilos generales CSS
     background-color: #111;
   }
 
+  .menu-item-bt{
+    float: right;
+  }
+
+  .en-button {
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    box-shadow:  none;
+  }
+
   .box {
     background-color: rgba(0,0,0,0.5);
     position: relative;
@@ -76,4 +90,25 @@ Estilos generales CSS
     height: 100%;
     color: #fff;
     z-index: 10;
+  }
+
+  .social-icon {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
