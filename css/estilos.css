@@ -2,15 +2,31 @@
 Estilos generales CSS
 */
 
-  .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  .menu-bar-generals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.453);
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 90%;
     overflow: hidden;
-    background-color: black;
-    position: top;
-    width: 100%;
-    z-index: 100;
+    position: fixed;
+    top: 0;
+  }
+
+  .menu {
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.453);
+    position: fixed;
+    display: flex;
+    top: 0;
   }
   
   body {
@@ -21,19 +37,10 @@ Estilos generales CSS
     float: left;
   }
   
-  .menu li a {
+  .menu-bar-text {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .menu li a:hover:not(.active) {
-    background-color: #111;
-  }
-  .menu li a:hover {
-    background-color: #111;
   }
 
   .menu-item-bt{
@@ -43,11 +50,14 @@ Estilos generales CSS
   .en-button {
     background-color: white;
     color: black;
-    border-radius: 40px;
-    width: 30px;
-    height: 30px;
-    text-decoration: none;
-    box-shadow:  none;
+    height: 5%;
+    width: 5%;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20;
+    margin-right: auto;
   }
 
   .section {
