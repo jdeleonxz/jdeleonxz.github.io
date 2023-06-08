@@ -2,16 +2,28 @@
 Fuentes y tamaños de letras
 */
 
-@import url('../fonts/Lancelot-Regular.ttf');
-@import url('../fonts/Oswald-Bold.ttf');
-
-body {
-  font-family: 'Lancelot', sans-serif;
+@font-face {
+  font-family: Custom-lancelot;
+  src: url('/fonts/Lancelot-Regular.ttf') format(TrueType);
+  font-weight: normal; /* Adjust font-weight if needed */
+  font-style: normal; /* Adjust font-style if needed */
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Lancelot', sans-serif;
-  }
+@font-face {
+  font-family: 'Custom-oswald';
+  src: url('/fonts/Oswald-Bold.ttf') format(TrueType);
+  /* Add more src declarations for different file formats if necessary */
+  font-weight: normal; /* Adjust font-weight if needed */
+  font-style: normal; /* Adjust font-style if needed */
+}
+
+@font-face {
+  font-family: 'Custom-bebas';
+  src: url('/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format(TrueType);
+  /* Add more src declarations for different file formats if necessary */
+  font-weight: normal; /* Adjust font-weight if needed */
+  font-style: normal; /* Adjust font-style if needed */
+}
 
   h1 {
     font-size: 36px;
@@ -33,12 +45,16 @@ h1, h2, h3, h4, h5 {
     font-size: 16px;
   }
 
-  .menu-bar-text {
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-  }
+.menu-bar-text {
+  font-family: 'Custom-oswald';
+  font-size: 20px;
+}
 
-  .en-button {
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-  }
+.en-button {
+  font-family: 'Custom-oswald';
+  font-size: 20px;
+}
+
+.sec-2-ti {
+  font-family: 'Custom-bebas';
+}
