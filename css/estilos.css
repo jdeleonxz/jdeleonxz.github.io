@@ -15,27 +15,24 @@ Estilos generales CSS
     top: 0;
   }
 
-  .menu {
-    justify-content: center;
+  .menu-1 {
     text-align: center;
-    list-style-type: none;
+  }
+
+  .menu {
+    text-align: center;
     border-radius: 20px;
-    max-width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.453);
     position: fixed;
-    display: flex;
-    top: 0;
+    /* display: inline-block; */
+    margin: 0 auto;
   }
   
   body {
     background-color: black;
   }
 
-  .menu li {
-    float: left;
-  }
   
   .menu-bar-text {
     display: block;
@@ -52,7 +49,7 @@ Estilos generales CSS
     color: black;
     height: 5%;
     width: 5%;
-    border-radius: 30%;
+    border-radius: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
