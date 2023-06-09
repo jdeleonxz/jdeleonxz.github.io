@@ -19,6 +19,18 @@ Estilos generales CSS
     text-align: center;
   }
 
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
   .menu {
     text-align: center;
     border-radius: 20px;
@@ -36,8 +48,14 @@ Estilos generales CSS
   
   .menu-bar-text {
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .menu-list-text {
+    float:left
   }
 
   .menu-item-bt{
@@ -45,17 +63,59 @@ Estilos generales CSS
   }
 
   .en-button {
-    background-color: white;
-    color: black;
-    height: 30%;
-    width: 30%;
-    border-radius: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20;
-    margin-right: auto;
+    --color: #f6f6f9;
+    padding: 0.5em 1.2em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 200;
+    font-size: 15px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
   }
+
+  .en-button::before, .en-button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+
+   .en-button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .en-button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .en-button:hover::before, .en-button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .en-button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .en-button:active {
+    filter: brightness(.8);
+   }
+   
 
   .section {
     background-color: black;
@@ -107,16 +167,10 @@ Estilos generales CSS
     border-radius: 20px; */
   }
 
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  .cv-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .sec-2-ti {
@@ -154,28 +208,24 @@ Estilos generales CSS
     text-align: left;
   }
 
-  .cv-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .bt-cv-1 {
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #fe0202;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #fb0202;
+    background: #060000;
+    box-shadow: 3px 3px #fa0202;
+    cursor: pointer;
+    margin: 35px 0;
+    text-decoration: none;
   }
 
-  .bt-cv-1 {
-    background-color: white;
-    color: rgb(163, 4, 4);
-    border: 2px solid rgb(154, 6, 6);
-    align-items: center;
-    padding: 10px 30px;
-    margin: 5px;
-    height: unset;
-    background-color: transparent;
-    color: #b20808;
-    border: 2px;
-    font-weight: 500;
-    box-shadow: 0 0 0 2px #b60505;
-    border-radius: 5%;
-    font-weight: 500;
-    text-decoration: none;
+  .bt-cv-1:active{
+    box-shadow: none;
+    transform: translate(3px, 3px);
   }
 
   .next-sec-img {
@@ -184,5 +234,11 @@ Estilos generales CSS
   }
 
   .sec-2-items {
-    list-style: none;
+    list-style: circle;
+    list-style-position: inside;
+  }
+
+  .section-2-items-li {
+    display: block;
+    margin-bottom: 10px;
   }
