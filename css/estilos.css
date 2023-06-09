@@ -146,6 +146,14 @@ Estilos generales CSS
     text-align: left;
   }
 
+  .text-sec-2-p {
+    display: block;
+    margin-left: 30px;
+    margin-right: 200px;
+    color: white;
+    text-align: left;
+  }
+
   .cv-box {
     display: flex;
     justify-content: center;
@@ -168,4 +176,13 @@ Estilos generales CSS
     border-radius: 5%;
     font-weight: 500;
     text-decoration: none;
+  }
+
+  .next-sec-img {
+    color: #b20808;
+
+  }
+
+  .sec-2-items {
+    list-style: none;
   }

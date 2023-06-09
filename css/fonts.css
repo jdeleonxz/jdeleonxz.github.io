@@ -69,3 +69,8 @@ Fuentes y tamaños de letras
 .text-sec-2-p {
   font-family: 'custom-nunito';
 }
+
+.bt-cv-1 {
+  font-family: 'Custom-oswald';
+  font-size: 20px;
+}
