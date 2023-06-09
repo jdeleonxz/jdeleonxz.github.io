@@ -123,3 +123,49 @@ Estilos generales CSS
     text-align: center;
     color: white
   }
+
+  .about-sec-2 {
+    display: flex;
+  }
+
+  .img-sec-2 {
+    display:block;
+    margin-left: 30px;
+    margin-right: auto;
+    border: 8px solid white;
+    width: 400px;
+    height: 250px;
+  }
+
+  .text-sec-2 {
+    display: block;
+    margin-left: 30px;
+    margin-right: 60%;
+    margin-right: auto;
+    color: white;
+    text-align: left;
+  }
+
+  .cv-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bt-cv-1 {
+    background-color: white;
+    color: rgb(163, 4, 4);
+    border: 2px solid rgb(154, 6, 6);
+    align-items: center;
+    padding: 10px 30px;
+    margin: 5px;
+    height: unset;
+    background-color: transparent;
+    color: #b20808;
+    border: 2px;
+    font-weight: 500;
+    box-shadow: 0 0 0 2px #b60505;
+    border-radius: 5%;
+    font-weight: 500;
+    text-decoration: none;
+  }
