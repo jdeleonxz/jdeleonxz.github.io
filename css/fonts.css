@@ -32,6 +32,14 @@ Fuentes y tamaños de letras
   font-style: normal; /* Adjust font-style if needed */
 }
 
+@font-face {
+  font-family: 'custom-rale';
+  src: url('/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf')  format(TrueType);
+  font-weight: normal; /* Adjust font-weight if needed */
+  font-style: normal; /* Adjust font-style if needed */
+}
+
+
   h1 {
     font-size: 36px;
   }
@@ -78,3 +86,19 @@ Fuentes y tamaños de letras
 .sec-2-items {
   font-family: 'custom-nunito';
 }
+
+.sec-3-sbti {
+  font-family: 'custom-rale';
+}
+
+.-sec-3-item-sbti {
+  font-family: 'custom-rale';
+  font-size: 16px;
+}
+
+.progress-bar-sec-3-br {
+  font-family: 'custom-oswald';
+  font-size: 16px;
+}
+
+
