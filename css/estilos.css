@@ -6,7 +6,7 @@ Estilos generales CSS
   /* main body of the page */
   
   body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
   }
 
 
@@ -110,8 +110,8 @@ Estilos generales CSS
 /* DEFAULT SECTION SETTINGS */
 
   .section {
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-top: 1px solid red;
   }
   
@@ -250,13 +250,18 @@ Estilos generales CSS
 
   .sec-3-cont {
     display: flex;
-  }
-  
-  .left-column,
-  .right-column {
-    width: 50%;
-    padding: 20px;
-  }
+    justify-content: space-between;
+}
+
+.sec-3-left {
+  width: 40%;
+  margin-left: 50px;
+}
+
+.sec-3-right {
+  width: 40%;
+  margin-right: 50px;
+}
 
   .sec-3-sbti {
     text-align: center;
