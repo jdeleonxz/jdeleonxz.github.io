@@ -6,7 +6,7 @@ Estilos generales CSS
   /* main body of the page */
   
   body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
   }
 
 
@@ -39,14 +39,15 @@ Estilos generales CSS
   
   .menu-bar-text {
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
 
   .menu-list-text {
-    float:left
+    float:left;
+    list-style-type: none;
   }
 
   .menu-item-bt{
@@ -54,7 +55,7 @@ Estilos generales CSS
   }
 
   .en-button {
-    --color: #f6f6f9;
+    --color: #0000ff;
     padding: 0.5em 1.2em;
     background-color: transparent;
     border-radius: .3em;
@@ -100,7 +101,7 @@ Estilos generales CSS
    }
    
    .en-button:hover {
-    color: rgb(10, 25, 30);
+    color: rgb(255, 255, 255);
    }
    
    .en-button:active {
@@ -110,8 +111,8 @@ Estilos generales CSS
 /* DEFAULT SECTION SETTINGS */
 
   .section {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-top: 1px solid red;
     justify-content: center;
     align-items: center;
@@ -132,7 +133,7 @@ Estilos generales CSS
   }
 
   .box {
-    background-color: rgba(238, 232, 232, 0);
+    background-color: rgba(0, 0, 0, 0);
     position: relative;
     float: center;
     display: flex;
@@ -181,7 +182,7 @@ Estilos generales CSS
 
   .sec-2-ti {
     text-align: center;
-    color: white
+    color: rgb(47, 0, 255)
   }
 
   .about-sec-2 {
@@ -192,7 +193,7 @@ Estilos generales CSS
     display:block;
     margin-left: 30px;
     margin-right: auto;
-    border: 8px solid white;
+    border: 8px solid rgb(0, 47, 255);
     width: 400px;
     height: 250px;
   }
@@ -202,7 +203,7 @@ Estilos generales CSS
     margin-left: 30px;
     margin-right: 60%;
     margin-right: auto;
-    color: white;
+    color: rgb(0, 13, 255);
     text-align: left;
   }
 
@@ -210,20 +211,20 @@ Estilos generales CSS
     display: block;
     margin-left: 30px;
     margin-right: 200px;
-    color: white;
+    color: rgb(0, 13, 255);
     text-align: left;
   }
 
   .bt-cv-1 {
     font-family: monospace;
     font-size: 1.5rem;
-    color: #fe0202;
+    color: #0230fe;
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 2px solid #fb0202;
-    background: #060000;
-    box-shadow: 3px 3px #fa0202;
+    border: 2px solid #0602fb;
+    background: #ffffff;
+    box-shadow: 3px 3px #0223fa;
     cursor: pointer;
     margin: 35px 0;
     text-decoration: none;
@@ -235,7 +236,7 @@ Estilos generales CSS
   }
 
   .next-sec-img {
-    color: #b20808;
+    color: #000000;
 
   }
 
@@ -269,7 +270,11 @@ Estilos generales CSS
 
   .sec-3-sbti {
     text-align: center;
-    color: white;
+    color: rgb(0, 17, 255);
+  }
+
+  .sec-3-item-sbti {
+    color: rgb(255, 255, 255);
   }
 
   .progress-bar-sec-3-div {
@@ -284,9 +289,10 @@ Estilos generales CSS
 .progress-bar-sec-3-el {
     margin-top: 5px;
     height: 1.80rem;
-    border: 2px solid #000000;
-    background-color: #000000;
-    box-shadow: 2px 2px 2px 2px #f90303;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 2px #0026ff;
+    color: white;
 }
 
 .progress-bar-sec-3-el,
@@ -295,7 +301,7 @@ Estilos generales CSS
 }
 
 .progress-bar-sec-3-br {
-    background-color: #fd0303;
+    background-color: #0329fd;
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 10px;
@@ -406,7 +412,7 @@ Estilos generales CSS
   font-weight: 600;
   letter-spacing: 2px;
   background: transparent;
-  color: #fff;
+  color: #000000;
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   -webkit-transition: all 0.2s ease-in;
@@ -437,8 +443,8 @@ Estilos generales CSS
   top: 7%;
   left: 0%;
   opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
+  background: #0004ff;
+  box-shadow: 0 0 50px 30px #1900ff;
   -webkit-transform: skewX(-20deg);
   -moz-transform: skewX(-20deg);
   -ms-transform: skewX(-20deg);
