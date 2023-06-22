@@ -6,9 +6,9 @@ Estilos generales CSS
   /* main body of the page */
   
   body {
-    background-color: rgb(255, 255, 255);
+    background-color: 
+    rgb(0, 0, 0);
   }
-
 
 /* MENU BAR */
 
@@ -39,7 +39,7 @@ Estilos generales CSS
   
   .menu-bar-text {
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,7 +55,7 @@ Estilos generales CSS
   }
 
   .en-button {
-    --color: #0000ff;
+    --color: #ffffff;
     padding: 0.5em 1.2em;
     background-color: transparent;
     border-radius: .3em;
@@ -101,7 +101,7 @@ Estilos generales CSS
    }
    
    .en-button:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
    }
    
    .en-button:active {
@@ -111,8 +111,8 @@ Estilos generales CSS
 /* DEFAULT SECTION SETTINGS */
 
   .section {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-top: 1px solid red;
     justify-content: center;
     align-items: center;
@@ -182,7 +182,7 @@ Estilos generales CSS
 
   .sec-2-ti {
     text-align: center;
-    color: rgb(47, 0, 255)
+    color: rgb(255, 0, 0)
   }
 
   .about-sec-2 {
@@ -193,7 +193,7 @@ Estilos generales CSS
     display:block;
     margin-left: 30px;
     margin-right: auto;
-    border: 8px solid rgb(0, 47, 255);
+    border: 8px solid rgb(255, 0, 0);
     width: 400px;
     height: 250px;
   }
@@ -203,7 +203,7 @@ Estilos generales CSS
     margin-left: 30px;
     margin-right: 60%;
     margin-right: auto;
-    color: rgb(0, 13, 255);
+    color: rgb(255, 0, 0);
     text-align: left;
   }
 
@@ -211,20 +211,20 @@ Estilos generales CSS
     display: block;
     margin-left: 30px;
     margin-right: 200px;
-    color: rgb(0, 13, 255);
+    color: rgb(255, 255, 255);
     text-align: left;
   }
 
   .bt-cv-1 {
     font-family: monospace;
     font-size: 1.5rem;
-    color: #0230fe;
+    color: #fe0202;
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 2px solid #0602fb;
-    background: #ffffff;
-    box-shadow: 3px 3px #0223fa;
+    border: 2px solid #fb0202;
+    background: #000000;
+    box-shadow: 3px 3px #fa0202;
     cursor: pointer;
     margin: 35px 0;
     text-decoration: none;
@@ -270,7 +270,7 @@ Estilos generales CSS
 
   .sec-3-sbti {
     text-align: center;
-    color: rgb(0, 17, 255);
+    color: rgb(255, 0, 0);
   }
 
   .sec-3-item-sbti {
@@ -289,10 +289,10 @@ Estilos generales CSS
 .progress-bar-sec-3-el {
     margin-top: 5px;
     height: 1.80rem;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 2px 2px #0026ff;
-    color: white;
+    border: 2px solid #000000;
+    background-color: #000000;
+    box-shadow: 2px 2px 2px 2px #ff0000;
+    color: rgb(0, 0, 0);
 }
 
 .progress-bar-sec-3-el,
@@ -301,7 +301,7 @@ Estilos generales CSS
 }
 
 .progress-bar-sec-3-br {
-    background-color: #0329fd;
+    background-color: #fd0303;
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 10px;
@@ -330,73 +330,86 @@ Estilos generales CSS
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .card {
-  width: 190px;
-  height: 254px;
-  background: #3405a3;
-  border-radius: 15px;
-  box-shadow: 1px 5px 60px 0px #100a886b;
-  margin-right: 20px;
-  transition: transform .5s ease-in-out;
- }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
 
- .card:last-child {
-  margin-right: 0px;
- }
- 
- .card .card-border-top {
-  width: 60%;
-  height: 3%;
-  background: #6b64f3;
-  margin: auto;
-  border-radius: 0px 0px 15px 15px;
- }
- 
- .card span {
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .para {
+  line-height: 1.5;
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
   font-weight: 600;
-  color: white;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  font-size: 16px;
- }
- 
- .card .job {
-  font-weight: 400;
-  color: white;
-  display: block;
-  text-align: center;
-  padding-top: 3px;
-  font-size: 12px;
- }
- 
- .card .img {
-  width: 70px;
-  height: 80px;
-  background: #6b64f3;
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 25px;
- }
- 
- .card button {
-  padding: 8px 25px;
-  display: block;
-  margin: auto;
-  border-radius: 8px;
   border: none;
-  margin-top: 30px;
-  background: #6b64f3;
-  color: white;
-  font-weight: 600;
- }
- 
- .card button:hover {
-  background: #534bf3;
- }
+  cursor: pointer;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card:hover .btn {
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
+
 
  .carousel-button {
   margin: auto;
@@ -474,5 +487,3 @@ Estilos generales CSS
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
-
-
