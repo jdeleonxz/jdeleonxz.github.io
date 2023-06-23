@@ -1,4 +1,4 @@
-const carousel = document.querySelector('.sec-5-cards');
+ /* const carousel = document.querySelector('.sec-5-cards');
 const items = carousel.querySelectorAll('.card');
 const prevButton = carousel.querySelector('.carousel-button prev');
 const nextButton = carousel.querySelector('.carousel-button next');
@@ -49,3 +49,5 @@ nextButton.addEventListener('click', () => {
     }
     showItems();
 });
+
+*/
