@@ -329,12 +329,12 @@ Estilos generales CSS
   margin-right: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 .card-container {
-  width: 300px;
+  width: 230px;
   height: 300px;  
   position: relative;
   border-radius: 10px;
@@ -361,7 +361,7 @@ Estilos generales CSS
   font-size: 32px;
   font-weight: 700;
   opacity: 1;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #4ff829 0%, #0f2bff 100% );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -380,7 +380,7 @@ Estilos generales CSS
   justify-content: center;
   text-align: center;
   gap: 10px;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg,  #4ff829 0%, #0f2bff 100%);
   color: #e8e8e8;
   padding: 20px;
   line-height: 1.5;
@@ -392,8 +392,8 @@ Estilos generales CSS
 }
 
 .card .content .heading {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 .card:hover .content {
@@ -483,4 +483,124 @@ Estilos generales CSS
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
+}
+
+/* SECTION 5 button repositories */
+
+.btn-sec-5-all {
+  display: flex;
+  margin-bottom: 1cm;
+  margin-top: 1cm;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  box-shadow: 0 0 5px 1px white;
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: rgba(255, 255, 255, 0.493);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 35px;
+}
+
+button:hover .circle {
+  width: 100%;
+  box-shadow: 0 0 10px 2px white;
+}
+
+button:hover .button-text {
+  transform: translate(-1.7rem, 0);
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(8.7rem, 0);
+}
+
+button:active .circle .icon.arrow {
+  transform: translate(9.5rem, 0);
+  transition: all 0.3s;
+}
+
+button:active .circle {
+  transform: scale(0.9);
+  transition: all 0.3s;
+  box-shadow: 0 0 5px 0.5px white;
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+button:active .button-text {
+  color: rgba(255, 255, 255, 0.459);
 }
