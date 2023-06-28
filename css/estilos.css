@@ -604,3 +604,13 @@ button:hover .button-text {
 button:active .button-text {
   color: rgba(255, 255, 255, 0.459);
 }
+
+/* SECTION 6 CONTACT */
+
+.section-6-ct {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+}
